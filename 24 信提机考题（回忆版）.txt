@@ -1,0 +1,21 @@
+注：不同考生习题不同，这里提供部分 provided by yqh
+
+1. 数值计算      30分
+要求1：定义：数值等于其各位上的数的立方和的数为水仙数（Narcissus）例：153 = 1 ^ 3 + 5 ^ 3 + 3 ^ 3，则153 为水仙数，编写一个函数int isNarcissus(int x)输入一个整数，判定该数是否为水仙数，是则输出1，否则输出0
+要求2：设计一个void displayNarcissus(int x)函数，输入一个整数，如果其为水仙数，则打印该数及其求和，例：153 = 1 ^ 3 + 5 ^ 3 + 3 ^ 3，否则打印“It is not a narcissus."
+要求3：在主函数中调用两个函数，找出[200, 1000]内的水仙数
+
+2.数组计算（数组长度为20）    35分
+要求1：设计一个函数void setRandomArray(int *x, const int size)对输入数组元素进行赋值，赋值为1-99内的随机值
+要求2：设计一个函数void sortInvert(int *x, const int size)对输入数组进行由小到大排序，要求使用插值排序
+要求3：设计一个函数void diplayArray(int *x, const int size, int *foundNum)从输入数组中找出并打印等比数列，例{3，6，12......},等比数列长度至少为3，将找到的等比数列的个数储存在foundNum
+
+3.字符串处理（禁止使用string.h库中的函数）      35分
+#define M 10
+#define N 30
+typedef struct{
+	int length;
+	char content[N];//字符串结尾统一不加'\0'
+}String
+要求1：设计一个void setString(String *s)函数，对字符串s进行赋值，字符串长度为小于等于N的随机值，字符串元素为'a'-'z'的随机字符
+要求2：设计一个函数void sortStrings(String *sArray), 对长度为M的字符串数组进行排序，排序顺序为首字母由小到大，如果首字母相同，则为字符串长度由小到大排序
